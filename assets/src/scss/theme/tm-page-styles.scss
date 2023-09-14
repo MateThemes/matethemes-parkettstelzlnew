@@ -1,0 +1,122 @@
+::-moz-selection {
+    background-color: $global-emphasis-color;
+    color: $global-inverse-color;
+}
+
+::selection {
+    background-color: $global-emphasis-color;
+    color: $global-inverse-color;
+}
+
+.tm-icon-content {
+    border-bottom: 3px solid $tm-contrast-gray;
+    color: $tm-red-color;
+    padding-bottom: 20px;
+    i {
+        font-size: 52px;
+    }
+}
+
+.tm-contrast-background {
+    background-color: $tm-block-background;
+}
+
+.tm-overlay-background {
+    background: rgba(85, 89, 92, 0.6);
+}
+
+
+.tm-breadcrumb-container {
+    background-color: $global-muted-background;
+    padding: 25px 25px 5px 25px;
+}
+
+.tm-border-right {
+    border-right: 2px solid $global-muted-background;
+}
+
+@media (max-width: 768px) {
+    .tm-border-right {
+        border-right: none;
+    }
+}
+
+.tm-icon-modifier {
+    display: block;
+}
+
+.uk-offcanvas-bar .uk-search-default {
+    width: 100%;
+}
+
+.tm-section-title {
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tm-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*
+ *
+ * Image Overlay Wrap.
+ *
+ *
+*/
+
+.overlay-wrap {
+    position: relative;
+}
+
+.top-wrap::before, .overlay-wrap::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*
+ *
+ * Processwire Styles
+ *
+ */
+
+ #edit-page {
+	/* the edit page link that appears when page is editable */
+	position: fixed;
+	bottom: 20px;
+	right: 20px
+}
+
+/*
+ *
+ * LazySizes Module CSS
+ *
+ */
+img[data-sizes="auto"] {
+    display: block;
+    width: 100%;
+}
+
+/*
+ *
+ * Klaro Cookie Consent
+ *
+ */
+ @media (min-width: 990px) {
+    .klaro .cookie-notice {
+        bottom: 20px;
+        left: 20px;
+    }
+ }

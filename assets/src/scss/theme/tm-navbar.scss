@@ -1,0 +1,33 @@
+// main: ../styles.scss 
+
+.tm-top-bar {
+  background-color: $global-muted-color;
+  color: $global-inverse-color;
+  padding: 0.5em 0 0.5em 0;
+  ul.uk-subnav {
+    li {
+      a {
+        color: $global-inverse-color;
+        &:hover {
+          color: rgba($global-inverse-color,0.8);
+          transition: color 0.7s ease-in;
+          -moz-transition: color 0.7s ease-in;
+          -webkit-transition: color 0.7s ease-in;
+        }
+      }
+    }
+  }
+}
+
+.tm-navbar-shadow {
+  box-shadow: 0 3px 8px -4px rgba(0,0,0,0.15);
+}
+
+.tm-navbar-no-shadow {
+  box-shadow: none!important;
+}
+
+.tm-offcanvas-social-links {
+  position: absolute;
+  bottom: 0;
+}
