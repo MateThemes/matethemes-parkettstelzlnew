@@ -1,0 +1,32 @@
+description = "Default Layout for Page"
+title = "Default"
+
+[global settings]
+handle = "Content\Settings"
+==
+<!DOCTYPE html>
+<html lang="{{ this.site.locale }}">
+    <head>
+        {% partial "head" %}
+    </head>
+    <body>
+        {% partial "preloader" %}
+
+        <div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+            <div class="uk-notification-message">
+                <a href="#tm-main">Skip to main content</a>
+            </div>
+        </div>
+
+        <div id="tm-main">
+            {% partial "header" %}
+
+            <div class="uk-container">
+                <h1>Here will be the homepage with tailor features</h1>
+            </div>
+
+            {% partial "footer" %}
+        </div>
+        {% partial "foot" %}
+    </body>
+</html>
