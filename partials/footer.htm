@@ -1,131 +1,64 @@
 <footer>
     <div class="uk-section-default uk-section uk-section-large">
         <div class="uk-container uk-container-xlarge">
-            <div class="uk-grid tm-grid-expand uk-grid-large uk-grid-margin-large" uk-grid>
+            <div class="uk-grid tm-grid-expand uk-grid-large uk-grid-margin-large" data-uk-grid>
                 <div class="uk-width-1-3@m">
-                    <h2 class="uk-h4 uk-margin uk-width-medium@m uk-text-left@m uk-text-center">        Subscribe to Our Newsletter<br class="uk-hidden@l" /> to Receive All the News    </h2>
-<div id="builderwidget-2#4" class="uk-margin-medium uk-text-left@m uk-text-center">
-    <form class="uk-form uk-panel js-form-newsletter" method="post" action="https://demo.yootheme.com/wordpress/themes/district/wp-admin/admin-ajax.php?action=kernel&amp;p=theme%2Fnewsletter%2Fsubscribe&amp;hash=82dda1f0">
-
-
-
-
-                        <div class="uk-position-relative">
-                <button class="el-button uk-form-icon uk-form-icon-flip" uk-icon="icon: arrow-right;" title="Subscribe"></button>                <input class="el-input uk-input" type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>            </div>
-
-
-        <input type="hidden" name="settings" value="eyJuYW1lIjoibWFpbGNoaW1wIiwiYWZ0ZXJfc3VibWl0IjoibWVzc2FnZSIsIm1lc3NhZ2UiOiJZb3UndmUgYmVlbiBzdWJzY3JpYmVkIHN1Y2Nlc3NmdWxseS4iLCJyZWRpcmVjdCI6IiIsImNsaWVudF9pZCI6IiIsImxpc3RfaWQiOiIiLCJkb3VibGVfb3B0aW4iOnRydWV9">
-        <div class="message uk-margin uk-hidden"></div>
-
-    </form>
-
-</div>
-
-
-
-
-
-</div>
-<div class="uk-width-2-3@m">
-
-
-
-
-
-
-
-<h2 class="uk-h4 uk-margin-large uk-text-left@m uk-text-center">        Where to Find Us    </h2>
-<div id="builderwidget-2#5" class="uk-margin uk-text-left@m uk-text-center">
-    <div class="uk-grid uk-child-width-1-1 uk-child-width-1-3@s uk-grid-large uk-grid-divider uk-grid-match" uk-grid>        <div>
-<div class="el-item uk-panel uk-margin-remove-first-child">
-
-
-
-
-
-
-                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Hamburg                    </h3>
-
-
-
-
-                <div class="el-content uk-panel uk-margin-top">Rormford Street 16</div>
-
-
-
-
-
-
-</div></div>
-        <div>
-<div class="el-item uk-panel uk-margin-remove-first-child">
-
-
-
-
-
-
-                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Berlin                    </h3>
-
-
-
-
-                <div class="el-content uk-panel uk-margin-top">Burton Street 28</div>
-
-
-
-
-
-
-</div></div>
-        <div>
-<div class="el-item uk-panel uk-margin-remove-first-child">
-
-
-
-
-
-
-                <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">                        Frankfurt                    </h3>
-
-
-
-
-                <div class="el-content uk-panel uk-margin-top">Blackmore Street 13</div>
-
-
-
-
-
-
-</div></div>
-        </div>
-
-</div>
-
-
-
-
-
-</div></div>
+                    <h2 class="uk-h4 uk-margin uk-width-medium@m uk-text-left@m uk-text-center">Um Angebote und Neuigkeiten zu erhalten, schreiben Sie sich in unseren Newsletter ein!</h2>
+                    <div class="uk-margin-medium uk-text-left@m uk-text-center">
+                        <form class="uk-form uk-panel js-form-newsletter" method="post" action="https://demo.yootheme.com/wordpress/themes/district/wp-admin/admin-ajax.php?action=kernel&amp;p=theme%2Fnewsletter%2Fsubscribe&amp;hash=82dda1f0">
+                            <div class="uk-position-relative">
+                                <button class="el-button uk-form-icon uk-form-icon-flip" data-uk-icon="icon: arrow-right;" title="Subscribe"></button>
+                                <input class="el-input uk-input" type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+                            </div>
+                            <input type="hidden" name="settings" value="eyJuYW1lIjoibWFpbGNoaW1wIiwiYWZ0ZXJfc3VibWl0IjoibWVzc2FnZSIsIm1lc3NhZ2UiOiJZb3UndmUgYmVlbiBzdWJzY3JpYmVkIHN1Y2Nlc3NmdWxseS4iLCJyZWRpcmVjdCI6IiIsImNsaWVudF9pZCI6IiIsImxpc3RfaWQiOiIiLCJkb3VibGVfb3B0aW4iOnRydWV9">
+                            <div class="message uk-margin uk-hidden"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-width-2-3@m">
+                    <h2 class="uk-h4 uk-margin-large uk-text-left@m uk-text-center">Wo Sie uns finden</h2>
+                    <div class="uk-margin uk-text-left@m uk-text-center">
+                        <div class="uk-grid uk-child-width-1-1 uk-child-width-1-2@s uk-grid-large uk-grid-divider uk-grid-match" data-uk-grid>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Ausstellung</h3>
+                                    {# informations showroom #}
+                                    <div class="el-content uk-panel uk-margin-top">{{ settings.showroom_street }}, {{ settings.showroom_plz}} {{ settings.showroom_city }}</div>
+                                    <div class="el-content uk-panel">
+                                        <ul class="uk-list uk-list-collapse">
+                                            <li>Telefon: {{ settings.showroom_phone }}</li>
+                                            <li>Fax: {{ settings.showroom_fax }}</li>
+                                        </ul>
+                                    </div>
+                                    {# opening hours showroom #}
+                                    <h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">Öffnungszeiten</h3>
+                                    <div class="el-content uk-panel uk-margin-small-top">
+                                        <ul class="uk-list uk-list-collapse">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
                                 </div>
-
-
-
-
-</div></footer>
-                        <footer>
-                <!-- Builder #footer -->
-<div class="uk-section-default uk-section uk-section-small">
-
-
-
-
-
-                                <div class="uk-container uk-container-xlarge">
-
-                    <div class="uk-grid tm-grid-expand uk-grid-margin" uk-grid>
-<div class="uk-width-1-4@m">
+                            </div>
+                            <div>
+                                <div class="el-item uk-panel uk-margin-remove-first-child">
+                                    <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Büro</h3>
+                                    <div class="el-content uk-panel uk-margin-top">Burton Street 28</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<footer>
+    <div class="uk-section-default uk-section uk-section-small">
+        <div class="uk-container uk-container-xlarge">
+            <div class="uk-grid tm-grid-expand uk-grid-margin" data-uk-grid>
+                <div class="uk-width-1-4@m">
 
 
 
