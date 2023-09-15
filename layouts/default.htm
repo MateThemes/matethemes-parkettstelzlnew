@@ -1,5 +1,5 @@
-title = "Default"
 description = "Default Layout for Page"
+title = "Default"
 
 [global settings]
 handle = "Content\Settings"
@@ -10,8 +10,19 @@ handle = "Content\Settings"
         {% partial "head" %}
     </head>
     <body>
-        
+        {% partial "preloader" %}
 
+        <div class="uk-hidden-visually uk-notification uk-notification-top-left uk-width-auto">
+            <div class="uk-notification-message">
+                <a href="#tm-main">Skip to main content</a>
+            </div>
+        </div>
+
+        <div id="tm-main">
+
+        <h1>hallo</h1>
+
+        </div>
         {% partial "foot" %}
     </body>
 </html>
