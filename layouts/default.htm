@@ -7,21 +7,11 @@ handle = "Content\Settings"
 <!DOCTYPE html>
 <html lang="{{ this.site.locale }}">
     <head>
-        {% partial 'head' %}
+        {% partial "head" %}
     </head>
-    {% partial 'header' %}
     <body>
-        {{ settings.body_code|raw }}
-        {% placeholder body_code %}
-        <main>
-            {% page %}
-        </main>
+        
+
+        {% partial "foot" %}
     </body>
-    {% if settings.enable_shop %}
-        <div id="cart-data">
-            {% partial 'shop/cart-data' %}
-        </div>
-    {% endif %}
-    {% partial 'footer' %}
-    {% partial 'foot' %}
 </html>
