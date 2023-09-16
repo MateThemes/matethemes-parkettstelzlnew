@@ -24,7 +24,7 @@
                                     <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Ausstellung</h3>
                                     {# informations showroom #}
                                     <div class="el-content uk-panel uk-margin-top">{{ settings.showroom_street }}, {{ settings.showroom_plz}} {{ settings.showroom_city }}</div>
-                                    <div class="el-content uk-panel">
+                                    <div class="el-content uk-panel uk-margin-small-top">
                                         <ul class="uk-list uk-list-collapse">
                                             <li>Telefon: {{ settings.showroom_phone }}</li>
                                             <li>Fax: {{ settings.showroom_fax }}</li>
@@ -33,10 +33,14 @@
                                     {# opening hours showroom #}
                                     <h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">Öffnungszeiten</h3>
                                     <div class="el-content uk-panel uk-margin-small-top">
+                                        {% if settings.showroom_openinghours %}
                                         <ul class="uk-list uk-list-collapse">
-                                            <li></li>
-                                            <li></li>
-                                            <li></li>
+                                            {% for settings in settings.showroom_openinghours %}
+                                            <li>{{ settings.opening_day }}: {{ settings.opening_hours }}</li>
+                                            {% endfor %}
+                                            {% else %}
+                                            <p>no data</p>
+                                            {% endif %}
                                         </ul>
                                     </div>
                                 </div>
@@ -44,7 +48,23 @@
                             <div>
                                 <div class="el-item uk-panel uk-margin-remove-first-child">
                                     <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Büro</h3>
-                                    <div class="el-content uk-panel uk-margin-top">Burton Street 28</div>
+                                    {# informations office #}
+                                    <div class="el-content uk-panel uk-margin-top">{{ settings.office_street }}, {{ settings.office_plz}} {{ settings.office_city }}</div>
+                                    <div class="el-content uk-panel uk-margin-small-top">
+                                        <ul class="uk-list uk-list-collapse">
+                                            <li>Telefon: {{ settings.office_phone }}</li>
+                                            <li>Fax: {{ settings.office_fax }}</li>
+                                        </ul>
+                                    </div>
+                                    {# opening hours office #}
+                                    <h3 class="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">Öffnungszeiten</h3>
+                                    <div class="el-content uk-panel uk-margin-small-top">
+                                        <ul class="uk-list uk-list-collapse">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
