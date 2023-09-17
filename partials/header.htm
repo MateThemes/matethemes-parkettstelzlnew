@@ -1,64 +1,183 @@
-<header>
-    <div class="tm-header-mobile uk-hidden@m">
-        <div data-uk-sticky show-on-up animation="uk-animation-slide-top" cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
-            <nav class="uk-navbar-container uk-container" data-uk-navbar="mode: click">
-                <div class="uk-navbar-left">
-                    <a class="uk-navbar-toggle" href="#tmoffcanvas" data-uk-toggle>
-                        <div data-uk-navbar-toggle-icon></div>
-                    </a>
-                </div>
-                <div class="uk-navbar-center">
-                    <a href='/' class='uk-navbar-item uk-logo'><img src='/site/assets/files/1016/artparkett-logo.svg' alt='Parkett Stelzl' width='180' uk-img></a>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-        <a data-uk-icon="icon: world"></a>
-        <div data-uk-dropdown="mode: click">
-            <ul class="uk-nav uk-dropdown-nav">
-                        <li class='uk-active'>
-                        <a class='lang-item Deutsch' hreflang='de' href='/impressum/'>Deutsch</a>
-                    </li>
-            <li class='no-current'>
-                        <a class='lang-item Englisch' hreflang='en' href='/en/imprint/'>Englisch</a>
-                    </li>
-            </ul>
-        </div>
-    </li>                </ul>
-                </div>
-            </nav>
-        </div>
-        <div id="tmoffcanvas" data-uk-offcanvas="mode: push; overlay: true">
-            <div class="uk-offcanvas-bar">
-                <button class="uk-offcanvas-close" type="button" uk-close></button>
-                <div class="uk-child-width-1-1" uk-grid>
-                    <div>
-                        <div class="uk-panel">
-                            <form class='uk-search uk-search-default uk-margin-large mt40' action='/search/' method='get'>
-                                <button type='submit' class='uk-search-toggle' uk-search-icon></button>
-                                <input type='search' id='mobile-search-query' name='q' class='uk-search-input' placeholder='Seite durchsuchen...' style="border-radius: 20px;">
-                            </form>
-
-                            <ul class='uk-nav uk-nav-default uk-nav-parent-icon' uk-nav>
-    <li class=""><a href="/">Home</a></li>
-    <li class=" uk-parent"><a href="#">Service</a>
-    <ul class='uk-nav-sub'>
-    <li class=""><a href="/fussboden-verlegen-vom-fachmann/">Fussboden verlegen vom Fachmann</a></li>
-    <li class=""><a href="/parkett-schleifen-und-renovieren/">Parkett schleifen und renovieren</a></li>
-    <li class=""><a href="/treppenrenovierung/">Treppenrenovierung</a></li>
-    </ul>
-    </li>
-    <li class=""><a href="/wir-ueber-uns/">Wir über uns</a></li>
-    <li class=""><a href="/unsere-austellung-in-munchen-forstenried/">Austellung</a></li>
-    <li class=""><a href="/galerie/">Galerie</a></li>
-    <li class=""><a href="/kontaktieren-sie-uns/">Kontakt</a></li>
-    </ul>
-                        </div>
+<header class="tm-header-mobile uk-hidden@l">
+    <div uk-sticky cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
+         <div class="uk-navbar-container">
+             <div class="uk-container uk-container-expand">
+                <nav class="uk-navbar" data-uk-navbar="{&quot;container&quot;:&quot;.tm-header-mobile &gt; [uk-sticky]&quot;}">
+                    <div class="uk-navbar-left">
+                        <a data-uk-toggle href="#tm-dialog-mobile" class="uk-navbar-toggle uk-navbar-toggle-animate">
+                            <div uk-navbar-toggle-icon></div>
+                        </a>
                     </div>
-                </div>
+                    <div class="uk-navbar-center">
+                        <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/" aria-label="Back to home" class="uk-logo uk-navbar-item">
+                            <img alt="DevStack" loading="eager" width="145" height="24" src="{{ 'assets/images/artparkett-logo.svg'|theme }}">
+                        </a>
+                    </div>
+                    <div class="uk-navbar-right">
+                        <div class="uk-navbar-item">
+                            <div class="uk-visible@s uk-grid tm-grid-expand uk-grid-column-small uk-grid-row-collapse" data-uk-grid>
+                                <div class="uk-grid-item-match uk-flex-middle uk-width-expand uk-visible@s">
+                                    <div class="uk-panel uk-width-1-1">
+
+
+<div class="uk-visible@s">
+    <ul class="uk-margin-remove-bottom uk-subnav">        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Login</a></li>
+        </ul>
+
+</div>
+
+                        </div>
+
+
+
+</div>
+<div class="uk-width-auto uk-visible@s">
+
+
+
+
+
+
+
+<div class="uk-margin uk-visible@s">
+
+
+
+
+<a class="el-content uk-button uk-button-primary uk-button-small" href="#" uk-scroll>
+
+        Register
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div></div>
+</div>
+
+                    </div>
+
+                </nav>
             </div>
+
         </div>
-    </div>    <!-- header for large screens -->
+
+        </div>
+
+
+
+
+
+
+        <div id="tm-dialog-mobile" class="uk-dropbar uk-dropbar-top" uk-drop="{&quot;clsDrop&quot;:&quot;uk-dropbar&quot;,&quot;flip&quot;:&quot;false&quot;,&quot;container&quot;:&quot;.tm-header-mobile&quot;,&quot;target-y&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;mode&quot;:&quot;click&quot;,&quot;target-x&quot;:&quot;.tm-header-mobile .uk-navbar-container&quot;,&quot;stretch&quot;:true,&quot;bgScroll&quot;:&quot;false&quot;,&quot;animation&quot;:&quot;reveal-top&quot;,&quot;animateOut&quot;:true,&quot;duration&quot;:300,&quot;toggle&quot;:&quot;false&quot;}">
+
+        <div class="tm-height-min-1-1 uk-flex uk-flex-column">
+
+                        <div class="uk-margin-auto-bottom">
+
+<div class="uk-grid uk-child-width-1-1">    <div>
+<div class="uk-panel widget widget_nav_menu" id="nav_menu-2">
+
+
+
+<ul class="uk-nav uk-nav-default uk-nav-divider uk-nav-accordion" uk-nav="targets: &gt; .js-accordion">
+
+    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=19"> Why DevStack?</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=2"> Enterprise</a></li>
+    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=21"> Pricing</a></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children js-accordion uk-parent"><a href> Developers <span uk-nav-parent-icon></span></a>
+    <ul class="uk-nav-sub">
+
+        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=24"> Support</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=20"> Feature Index</a></li></ul></li>
+    <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children uk-active js-accordion uk-open uk-parent"><a href> Company <span uk-nav-parent-icon></span></a>
+    <ul class="uk-nav-sub">
+
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item uk-active"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=4"> About</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=23"> Our Story</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=3"> Careers</a></li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=65"> Blog</a></li></ul></li></ul>
+
+</div>
+</div></div>            </div>
+
+                        <div class="uk-grid-margin">
+
+<div class="uk-grid uk-child-width-1-1">    <div>
+<div class="uk-panel widget widget_builderwidget" id="builderwidget-2">
+
+
+    <div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+
+
+
+
+
+
+
+<div class="uk-margin">
+
+
+
+
+<a class="el-content uk-width-1-1 uk-button uk-button-primary uk-button-large" href="#" uk-scroll>
+
+        Register
+
+</a>
+
+
+
+
+
+</div>
+
+
+
+
+
+</div></div><div class="uk-grid tm-grid-expand uk-child-width-1-1 uk-grid-margin">
+<div class="uk-width-1-1">
+
+
+
+
+
+
+
+<div class="uk-text-center">
+    <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-center" uk-margin>        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Contact Us</a></li>
+        <li class="el-item ">
+    <a class="el-link" href="#" uk-scroll>Login</a></li>
+        </ul>
+
+</div>
+
+
+
+
+</div></div>
+</div>
+</div></div>            </div>
+
+        </div>
+
+    </div>
+
+
+</header>
+<header>   <!-- header for large screens -->
     <div class="tm-header uk-visible@m" data-uk-header>
         <div class="tm-headerbar-default tm-headerbar tm-headerbar-top">
             <div class="uk-container uk-container-large uk-flex uk-flex-middle">
