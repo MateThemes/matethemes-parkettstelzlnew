@@ -7,7 +7,7 @@
                     <form class="uk-form uk-panel js-form-newsletter" method="post" action="https://demo.yootheme.com/wordpress/themes/district/wp-admin/admin-ajax.php?action=kernel&amp;p=theme%2Fnewsletter%2Fsubscribe&amp;hash=82dda1f0">
                         <div class="uk-position-relative">
                             <button class="el-button uk-form-icon uk-form-icon-flip" data-uk-icon="icon: arrow-right;" title="Subscribe"></button>
-                            <input class="el-input uk-input" type="email" name="email" placeholder="Email Address" aria-label="Email Address" required>
+                            <input class="el-input uk-input" type="email" name="email" placeholder="E-Mail Adresse" aria-label="Email Address" required>
                         </div>
                         <input type="hidden" name="settings" value="eyJuYW1lIjoibWFpbGNoaW1wIiwiYWZ0ZXJfc3VibWl0IjoibWVzc2FnZSIsIm1lc3NhZ2UiOiJZb3UndmUgYmVlbiBzdWJzY3JpYmVkIHN1Y2Nlc3NmdWxseS4iLCJyZWRpcmVjdCI6IiIsImNsaWVudF9pZCI6IiIsImxpc3RfaWQiOiIiLCJkb3VibGVfb3B0aW4iOnRydWV9">
                         <div class="message uk-margin uk-hidden"></div>
@@ -94,16 +94,13 @@
                     <div class="uk-text-center">
                         <ul class="uk-margin-remove-bottom uk-subnav  uk-subnav-divider uk-flex-center" data-uk-margin>
                             <li class="el-item">
-                                <a class="el-link" href="https://demo.yootheme.com/wordpress/themes/district/?page_id=3">Menu</a>
-                            </li>
-                            <li class="el-item">
-                                <a class="el-link" href="https://demo.yootheme.com/wordpress/themes/district/?page_id=5">About</a>
-                            </li>
-                            <li class="el-item">
-                                <a class="el-link" href="https://demo.yootheme.com/wordpress/themes/district/?page_id=6">Contact</a>
+                                <a class="el-link" href="{{ 'allgemeine-geschaeftsbedingungen'|page }}">AGB</a>
                             </li>
                             <li class="el-item">
                                 <a class="el-link" href="{{ 'impressum'|page }}">Impressum</a>
+                            </li>
+                            <li class="el-item">
+                                <a class="el-link" href="{{ 'datenschutz'|page }}">Datenschutz</a>
                             </li>
                         </ul>
                     </div>

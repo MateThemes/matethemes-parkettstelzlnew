@@ -17,12 +17,12 @@ $global-inverse-color:                           #fff;
 
 //
 // Colors provided by Theme
-$tm-red-color: #d8344e;
+$tm-red-color: #ef6161;
 $tm-gray-color-2: #4c5054;
 $tm-contrast-gray: #e5e5e5;
 $tm-block-background: #f7f7f7;
 
-$global-link-color:                              #d8344e;
+$global-link-color:                              #ef6161;
 $global-link-hover-color:                        #323232;
 
 $global-border:                                  $tm-contrast-gray;
@@ -87,6 +87,30 @@ $form-focus-background: $tm-contrast-gray;
 @import "../../../node_modules/uikit/src/scss/mixins-theme.scss";
 
 // 3. Your custom mixin overwrites.
+@mixin hook-navbar-nav-item() {
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color, border-color, box-shadow;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -1px;
+    height: 3px;
+    background-color: #f06161;
+    transition: 0.3s ease-in-out;
+    transition-property: background-color, border-color, box-shadow, height, left, right, opacity;
+    --uk-navbar-nav-item-line-margin-horizontal: 0;
+    left: var(--uk-navbar-nav-item-line-margin-horizontal);
+    right: 100%;
+  }
+}
+@mixin hook-navbar-nav-item-hover() {
+  
+}
 @mixin hook-button() {
   border-radius: 25px;
 }

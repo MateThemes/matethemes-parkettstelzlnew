@@ -3,25 +3,25 @@
   font-family: Heebo;
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/font-91dba941.woff2) format("woff2");
+  src: url(../css/fonts/heebo-v22-latin-regular.woff2) format("woff2");
 }
 @font-face {
   font-family: Heebo;
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/font-54bd29d3.woff2) format("woff2");
+  src: url(../css/fonts/heebo-v22-latin-500.woff2) format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/font-e05ad3e6.woff2) format("woff2");
+  src: url(../css/fonts/ibm-plex-sans-v19-latin-regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;
   font-weight: 500;
-  src: url(../fonts/font-b1f53c2b.woff2) format("woff2");
+  src: url(../css/fonts/ibm-plex-sans-v19-latin-500.woff2) format("woff2");
 }
 @keyframes woocommerce-spinner {
   0% {

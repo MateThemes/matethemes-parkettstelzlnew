@@ -16,23 +16,6 @@
   border-top: 1px solid #e7e8ea;
 }
 .uk-navbar-nav>li>a {
-  transition: .1s ease-in-out;
-  transition-property: color, background-color, border-color, box-shadow;
-  position: relative;
-  z-index: 1;
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    height: 0;
-    background-color: #ec2178;
-    transition: .15s ease-in-out;
-    transition-property: background-color,border-color,box-shadow,height,left,right,opacity;
-    left: 16px;
-    right: 16px;
-  }
   &:hover {
     height: 2px;
   }
