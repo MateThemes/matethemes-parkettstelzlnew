@@ -116,9 +116,11 @@
                             </div>
                             <div>
                                 <div class="el-item uk-panel uk-margin-remove-first-child">
-                                    <a href="https://facebook.com/artparkettstelzl">
-                                        <span class="el-image uk-text-emphasis" uk-icon="icon: facebook; width: 20; height: 20;"></span>
+                                    {% for settings in settings.company_socialmedialinks %}
+                                    <a href="{{ settings.social_url }}" target="_blank" rel="noreferrer">
+                                        <span class="el-image uk-text-emphasis" uk-icon="icon: {{ settings.social_icon }}; width: 20; height: 20;"></span>
                                     </a>
+                                    {% endfor %}
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,3 @@
-##
-==
 {# header for mobile screens #}
 <header class="tm-header-mobile uk-hidden@l">
     <div uk-sticky cls-active="uk-navbar-sticky" sel-target=".uk-navbar-container">
@@ -65,11 +63,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li>
-                                    <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=2"> Enterprise</a>
+                                <li {% if this.page.id == 'wir-ueber-uns' %}class="uk-active"{% endif %}>
+                                    <a href="{{ 'wir-ueber-uns'|page }}">Wir über uns</a>
                                 </li>
-                                <li>
-                                    <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=21"> Pricing</a>
+                                <li {% if this.page.id == 'unsere-ausstellung-in-muenchen-forstenried' %}class="uk-active"{% endif %}>
+                                    <a href="{{ 'unsere-ausstellung-in-muenchen-forstenried'|page }}">Unsere Ausstellung</a>
                                 </li>
                                 <li class="js-accordion uk-parent">
                                     <a href> Company <span uk-nav-parent-icon></span></a>
@@ -200,24 +198,33 @@
                         <div class="uk-navbar-left uk-flex-auto">
                             <ul class="uk-navbar-nav">
                                 <div class='uk-navbar-center uk-visible@m'>
-    <ul class='uk-navbar-nav'>
-        <li><a href='/'>Home</a></li>
-        <li><a href='#'>Service</a>
-        <div class='uk-navbar-dropdown'>
-            <ul class='uk-nav uk-navbar-dropdown-nav'>
-        <li><a href='/fussboden-verlegen-vom-fachmann/'>Fussboden verlegen vom Fachmann</a></li>
-        <li><a href='/parkett-schleifen-und-renovieren/'>Parkett schleifen und renovieren</a></li>
-        <li><a href='/treppenrenovierung/'>Treppenrenovierung</a></li>
-    </ul>
-        </div>
-    </li>
-        <li><a href='/wir-ueber-uns/'>Wir über uns</a></li>
-        <li><a href='/unsere-austellung-in-munchen-forstenried/'>Ausstellung</a></li>
-        <li {% if this.page.id == 'galerie' %}class="uk-active"{% endif %}>
-            <a href="{{ 'galerie'|page }}">Galerie</a>
-        </li>
-        <li><a href='/kontaktieren-sie-uns/'>Kontakt</a></li>
-    </ul></div>						</ul>
+                                    <ul class='uk-navbar-nav'>
+                                        <li>
+                                            <a href='/'>Home</a>
+                                        </li>
+                                        <li>
+                                            <a href='#'>Service</a>
+                                            <div class='uk-navbar-dropdown'>
+                                                <ul class='uk-nav uk-navbar-dropdown-nav'>
+                                                    <li><a href='/fussboden-verlegen-vom-fachmann/'>Fussboden verlegen vom Fachmann</a></li>
+                                                    <li><a href='/parkett-schleifen-und-renovieren/'>Parkett schleifen und renovieren</a></li>
+                                                    <li><a href='/treppenrenovierung/'>Treppenrenovierung</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li {% if this.page.id == 'wir-ueber-uns' %}class="uk-active"{% endif %}>
+                                            <a href="{{ 'wir-ueber-uns'|page }}">Wir über uns</a>
+                                        </li>
+                                        <li {% if this.page.id == 'unsere-ausstellung-in-muenchen-forstenried' %}class="uk-active"{% endif %}>
+                                            <a href={{ 'unsere-ausstellung-in-muenchen-forstenried'|page }}>Ausstellung</a>
+                                        </li>
+                                        <li {% if this.page.id == 'galerie' %}class="uk-active"{% endif %}>
+                                            <a href="{{ 'galerie'|page }}">Galerie</a>
+                                        </li>
+                                        <li><a href='/kontaktieren-sie-uns/'>Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
                             <div class="uk-margin-auto-left uk-navbar-item">
                                 <div class="uk-margin-remove-last-child custom">
                                     <a href="/kontaktieren-sie-uns/" class="uk-button uk-button-primary">Anfrage stellen</a>
