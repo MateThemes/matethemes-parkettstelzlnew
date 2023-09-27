@@ -116,9 +116,9 @@
                             </div>
                             <div>
                                 <div class="el-item uk-panel uk-margin-remove-first-child">
-                                    {% for settings in settings.company_socialmedialinks %}
-                                    <a href="{{ settings.social_url }}" target="_blank" rel="noreferrer">
-                                        <span class="el-image uk-text-emphasis" uk-icon="icon: {{ settings.social_icon }}; width: 20; height: 20;"></span>
+                                    {% for setting in settings.company_socialmedialinks %}
+                                    <a href="{{ setting.social_url }}" target="_blank" rel="noreferrer">
+                                        <span class="el-image uk-text-emphasis" uk-icon="icon: {{ setting.social_icon }}; width: 20; height: 20;"></span>
                                     </a>
                                     {% endfor %}
                                 </div>
