@@ -1,0 +1,76 @@
+handle: Content\Settings
+type: global
+name: Webseiten Einstellungen
+multisite: sync
+description: "Ändere hier die Einstellungen für die Webseite. Zum Beispiel: Öffnungszeiten, Telefonnummer etc."
+
+
+navigation:
+    parent: settings
+    icon: icon-cog
+    category: CATEGORY_CMS
+
+fields:
+    website_name:
+        label: "Webseiten Name"
+        span: left
+        tab: "Allgemein"
+
+    social_section:
+        label: "Social Media"
+        comment: "Füge hier die Social Media Kanäle hinzu."
+        type: section
+        tab: "Allgemein"
+
+    social_media:
+        label: "Soziale Medien"
+        tab: "Allgemein"
+        type: repeater
+        form:
+            fields:
+                social_icon:
+                    label: "Icon"
+                    span: left
+                    type: dropdown
+                    options:
+                        facebook: "Facebook"
+                        instagram: "Instagram"
+                        pinterest: "Pinterest"
+                        tiktok: "TikTok"
+                        twitter: "Twitter"
+                        youtube: "YouTube"
+                        whatsapp: "Whatsapp"
+                social_url:
+                    label: "URL zu Social Media"
+                    span: right
+
+    office_section:
+        label: "Büro"
+        comment: "Allgemeine Informationen zum Büro, z.B. Telefonnummer etc.."
+        type: section
+        tab: "Büro"
+
+    office_street:
+        label: "Straße"
+        span: full
+        tab: "Büro"
+
+    office_plz:
+        label: "Postleitzahl"
+        span: left
+        tab: "Büro"
+
+    office_town:
+        label: "Ort"
+        span: right
+        tab: "Büro"
+
+    office_phone:
+        label: "Telefonnummer"
+        span: left
+        tab: "Büro"
+
+    office_fax:
+        label: "Faxnummer"
+        span: right
+        tab: "Büro"
