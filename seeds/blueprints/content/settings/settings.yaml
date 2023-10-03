@@ -13,7 +13,7 @@ navigation:
 fields:
     website_name:
         label: "Webseiten Name"
-        span: left
+        span: full
         tab: "Allgemein"
 
     social_section:
@@ -74,3 +74,34 @@ fields:
         label: "Faxnummer"
         span: right
         tab: "Büro"
+
+    showroom_section:
+        label: "Ausstellung"
+        comment: "Allgemeine Informationen zur Ausstellung, z.B. Telefonnummer etc.."
+        type: section
+        tab: "Ausstellung"
+
+    showroom_street:
+        label: "Straße"
+        span: full
+        tab: "Ausstellung"
+
+    showroom_plz:
+        label: "Postleitzahl"
+        span: left
+        tab: "Ausstellung"
+
+    showroom_town:
+        label: "Ort"
+        span: right
+        tab: "Ausstellung"
+
+    showroom_phone:
+        label: "Telefonnummer"
+        span: left
+        tab: "Ausstellung"
+
+    showroom_fax:
+        label: "Faxnummer"
+        span: right
+        tab: "Ausstellung"

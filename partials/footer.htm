@@ -49,7 +49,7 @@
                             <div class="el-item uk-panel uk-margin-remove-first-child">
                                 <h3 class="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">Büro</h3>
                                 {# informations office #}
-                                <div class="el-content uk-panel uk-margin-top">{{ settings.office_street }}, {{ settings.office_plz}} {{ settings.office_city }}</div>
+                                <div class="el-content uk-panel uk-margin-top">{{ settings.office_street }}, {{ settings.office_plz}} {{ settings.office_town }}</div>
                                 <div class="el-content uk-panel uk-margin-small-top">
                                     <ul class="uk-list uk-list-collapse">
                                         <li>Telefon: {{ settings.office_phone }}</li>
@@ -116,7 +116,7 @@
                             </div>
                             <div>
                                 <div class="el-item uk-panel uk-margin-remove-first-child">
-                                    {% for setting in settings.company_socialmedialinks %}
+                                    {% for setting in settings.social_media %}
                                     <a href="{{ setting.social_url }}" target="_blank" rel="noreferrer">
                                         <span class="el-image uk-text-emphasis" uk-icon="icon: {{ setting.social_icon }}; width: 20; height: 20;"></span>
                                     </a>
