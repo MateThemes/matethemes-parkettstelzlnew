@@ -1,8 +1,0 @@
--
-    name: Website Settings
-    class: Tailor\Models\RecordImport
-    file: seeds/data/settings.json
-    attributes:
-        file_format: json
-        blueprint_uuid: a86c7114-848a-400d-907e-1ff67109c609
-        update_existing: true

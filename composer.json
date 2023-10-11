@@ -1,0 +1,8 @@
+{
+    "name": "matethemes/parkettstelzl-theme",
+    "type": "october-theme",
+    "description": "New company theme for Parkett Stelzl on OctoberCMS",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

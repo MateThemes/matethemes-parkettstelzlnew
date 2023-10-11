@@ -75,6 +75,25 @@ fields:
         span: right
         tab: "Büro"
 
+    office_opensection:
+        label: "Öffnungszeiten"
+        comment: "Gib die Öffnungszeiten des Büros an."
+        type: section
+        tab: "Büro"
+
+    office_opening:
+        label: "Öffnungszeiten"
+        tab: "Büro"
+        type: repeater
+        form:
+            fields:
+                open_day:
+                    label: "Geöffnet am"
+                    span: left
+                open_time:
+                    label: "Geöffnet von - bis"
+                    span: right
+
     showroom_section:
         label: "Ausstellung"
         comment: "Allgemeine Informationen zur Ausstellung, z.B. Telefonnummer etc.."
@@ -105,3 +124,22 @@ fields:
         label: "Faxnummer"
         span: right
         tab: "Ausstellung"
+
+    showroom_opensection:
+        label: "Öffnungszeiten"
+        comment: "Gib die Öffnungszeiten des Büros an."
+        type: section
+        tab: "Ausstellung"
+
+    showroom_opening:
+        label: "Öffnungszeiten"
+        tab: "Ausstellung"
+        type: repeater
+        form:
+            fields:
+                open_day:
+                    label: "Geöffnet am"
+                    span: left
+                open_time:
+                    label: "Geöffnet von - bis"
+                    span: right

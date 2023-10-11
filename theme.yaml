@@ -1,6 +1,8 @@
-name: "Parkett Stelzl"
-description: "New company theme for Parkett Stelzl on OctoberCMS"
-author: "Gerald Schandl @mate-themes"
-homepage: "https://mate-themes.com"
+name: 'Parkett Stelzl'
+description: 'New company theme for Parkett Stelzl on OctoberCMS'
+author: 'Gerald Schandl @mate-themes'
+homepage: 'https://mate-themes.com'
 authorCode: MateThemes
 code: ParkettStelzl
+parent: ''
+database: '0'
