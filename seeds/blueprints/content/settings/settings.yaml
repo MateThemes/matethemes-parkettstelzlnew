@@ -93,6 +93,18 @@ fields:
                 open_time:
                     label: "Geöffnet von - bis"
                     span: right
+    
+    office_noticesection:
+        label: "Wichtige Information"
+        comment: "Hier kannst du eine wichtige Information im Fußzeilenbereich anzeigen. z.B. zu den Öffnungszeiten etc."
+        tab: "Büro"
+        type: section
+
+    office_noticetext:
+        label: "Wichtige Information"
+        tab: "Büro"
+        type: textarea
+        size: small
 
     showroom_section:
         label: "Ausstellung"
@@ -143,3 +155,15 @@ fields:
                 open_time:
                     label: "Geöffnet von - bis"
                     span: right
+
+    showroom_noticesection:
+        label: "Wichtige Information"
+        comment: "Hier kannst du eine wichtige Information im Fußzeilenbereich anzeigen. z.B. zu den Öffnungszeiten etc."
+        tab: "Ausstellung"
+        type: section
+
+    showroom_noticetext:
+        label: "Wichtige Information"
+        tab: "Ausstellung"
+        type: textarea
+        size: small
