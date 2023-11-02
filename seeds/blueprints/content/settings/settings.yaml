@@ -14,6 +14,7 @@ fields:
     website_name:
         label: "Webseiten Name"
         span: full
+        default: "Parkett Stelzl"
         tab: "Allgemein"
 
     social_section:
@@ -53,26 +54,31 @@ fields:
     office_street:
         label: "Straße"
         span: full
+        default: "Görzer Straße 144"
         tab: "Büro"
 
     office_plz:
         label: "Postleitzahl"
         span: left
+        default: "81549"
         tab: "Büro"
 
     office_town:
         label: "Ort"
         span: right
+        default: "München"
         tab: "Büro"
 
     office_phone:
         label: "Telefonnummer"
         span: left
+        default: "089 689 21 77"
         tab: "Büro"
 
     office_fax:
         label: "Faxnummer"
         span: right
+        default: "089 689 21 78"
         tab: "Büro"
 
     office_opensection:
@@ -115,26 +121,31 @@ fields:
     showroom_street:
         label: "Straße"
         span: full
+        default: "Forstenrieder Allee 195"
         tab: "Ausstellung"
 
     showroom_plz:
         label: "Postleitzahl"
         span: left
+        default: "81476"
         tab: "Ausstellung"
 
     showroom_town:
         label: "Ort"
         span: right
+        default: "München"
         tab: "Ausstellung"
 
     showroom_phone:
         label: "Telefonnummer"
         span: left
+        default: "089 744 95 130"
         tab: "Ausstellung"
 
     showroom_fax:
         label: "Faxnummer"
         span: right
+        default: "089 744 95 137"
         tab: "Ausstellung"
 
     showroom_opensection:
