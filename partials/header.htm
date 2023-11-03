@@ -14,7 +14,7 @@
                     </div>
                     <div class="uk-navbar-center">
                         <a href="{{ 'home'|page }}" aria-label="Back to home" class="uk-logo uk-navbar-item">
-                            <img alt="Parkett Stelzl - Parkett- und Bodenleger aus München" loading="eager" width="160" height="44.5" src="{{ 'assets/images/artparkett-logo.svg'|theme }}">
+                            <img alt="Parkett Stelzl - Parkett- und Bodenleger aus München" loading="eager" width="220" height="44.5" src="{{ 'assets/images/testlogo.svg'|theme }}">
                         </a>
                     </div>
                     <div class="uk-navbar-right">
@@ -51,6 +51,20 @@
                                     <a href="{{ 'home'|page }}">Home</a>
                                 </li>
                                 <li class="js-accordion uk-parent">
+                                    <a href>Produkte <span uk-nav-parent-icon></span></a>
+                                    <ul class="uk-nav-sub">
+                                        <li>
+                                            <a href="#">Fußboden verlegen vom Fachmann</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Parkett schleifen und renovieren</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Treppenrenovierung</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="js-accordion uk-parent">
                                     <a href>Leistungen <span uk-nav-parent-icon></span></a>
                                     <ul class="uk-nav-sub">
                                         <li>
@@ -64,28 +78,14 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li {% if this.page.id == 'wir-ueber-uns' %}class="uk-active"{% endif %}>
-                                    <a href="{{ 'wir-ueber-uns'|page }}">Wir über uns</a>
-                                </li>
                                 <li {% if this.page.id == 'unsere-ausstellung-in-muenchen-forstenried' %}class="uk-active"{% endif %}>
                                     <a href="{{ 'unsere-ausstellung-in-muenchen-forstenried'|page }}">Unsere Ausstellung</a>
                                 </li>
-                                <li class="js-accordion uk-parent">
-                                    <a href> Company <span uk-nav-parent-icon></span></a>
-                                    <ul class="uk-nav-sub">
-                                        <li class="">
-                                            <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=4"> About</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=23"> Our Story</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy">
-                                            <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=3"> Careers</a>
-                                        </li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="https://demo.yootheme.com/wordpress/themes/devstack.light-orange/?page_id=65"> Blog</a>
-                                        </li>
-                                    </ul>
+                                <li {% if this.page.id == 'wir-ueber-uns' %}class="uk-active"{% endif %}>
+                                    <a href="{{ 'wir-ueber-uns'|page }}">Wir über uns</a>
+                                </li>
+                                <li {% if this.page.id == 'galerie' %}class="uk-active"{% endif %}>
+                                    <a href="{{ 'galerie'|page }}">Galerie</a>
                                 </li>
                             </ul>
                         </div>
@@ -132,7 +132,7 @@
         <div class="tm-headerbar-default tm-headerbar tm-headerbar-top">
             <div class="uk-container uk-container-large uk-flex uk-flex-middle">
                 <a href="{{ 'home'|page }}" class="uk-logo">
-                    <img src="{{ 'assets/images/artparkett-logo.svg'|theme }}" alt="Parkett Stelzl - Parkett- und Bodenleger aus München" width="220" height="61" data-uk-img>
+                    <img src="{{ 'assets/images/testlogo.svg'|theme }}" alt="Parkett Stelzl - Parkett- und Bodenleger aus München" width="280" height="61" data-uk-img>
                 </a>
                 <div class="uk-margin-auto-left">
                     <div class="uk-grid-medium uk-child-width-auto uk-flex-middle" data-uk-grid>
@@ -191,12 +191,13 @@
                                                 </ul>
                                             </div>
                                         </li>
+                                        <li {% if this.page.id == 'unsere-ausstellung-in-muenchen-forstenried' %}class="uk-active"{% endif %}>
+                                            <a href="{{ 'unsere-ausstellung-in-muenchen-forstenried'|page }}">Unsere Ausstellung</a>
+                                        </li>
                                         <li {% if this.page.id == 'wir-ueber-uns' %}class="uk-active"{% endif %}>
                                             <a href="{{ 'wir-ueber-uns'|page }}">Wir über uns</a>
                                         </li>
-                                        <li {% if this.page.id == 'unsere-ausstellung-in-muenchen-forstenried' %}class="uk-active"{% endif %}>
-                                            <a href={{ 'unsere-ausstellung-in-muenchen-forstenried'|page }}>Ausstellung</a>
-                                        </li>
+
                                         <li {% if this.page.id == 'galerie' %}class="uk-active"{% endif %}>
                                             <a href="{{ 'galerie'|page }}">Galerie</a>
                                         </li>
